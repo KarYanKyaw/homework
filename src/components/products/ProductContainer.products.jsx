@@ -8,6 +8,7 @@ const ProductSection = () => {
 
   return (
     <>
+      {error && <p>{error}</p>}
       <div className="space-y-10">
         {!loading && (
           <p className=" my-6 md:mb-12 text-center font-serif font-medium  text-lg md:text-3xl text-neutral-600 ">
