@@ -6,8 +6,9 @@ import {
   ProductDetail,
   LoginPage,
   SignUpPage,
+  NoutFoundPage,
 } from "./pages";
-import { Nav } from "./components/ui";
+import { Footer, Nav } from "./components/ui";
 import { AddNewProduct, Inventory, Roles } from "./components/dashboard";
 
 const App = () => {
@@ -24,7 +25,9 @@ const App = () => {
         </Route>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route path="*" element={<NoutFoundPage />} />
       </Routes>
+      <Footer />
     </>
   );
 };
